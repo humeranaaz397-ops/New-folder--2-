@@ -882,4 +882,100 @@ footer {
 .about-points li {
   font-size: 1.1rem;  /* bigger text */
   line-height: 1.8;
+}.skills-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.skill-category-card {
+  padding: 34px 26px;
+  border-radius: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(22px);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+  transition: 0.35s;
+}
+
+.skill-category-card:hover {
+  border-color: rgba(0, 213, 255, 0.45);
+  box-shadow: 0 30px 90px rgba(0, 213, 255, 0.17);
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 2.2rem;
+  background: rgba(0, 213, 255, 0.12);
+  border: 1px solid rgba(0, 213, 255, 0.25);
+  box-shadow: 0 0 25px rgba(0, 213, 255, 0.2);
+}
+
+.skill-category-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.skill-category-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+@media (max-width: 980px) {
+  .skills-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .skills-category-grid {
+    grid-template-columns: 1fr;
+  }
+}.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.skill-tags span {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(0, 213, 255, 0.12);
+  border: 1px solid rgba(0, 213, 255, 0.3);
+  color: #7dd3fc;
+  transition: 0.3s;
+}
+
+.skill-tags span:hover {
+  background: rgba(0, 213, 255, 0.25);
+  transform: scale(1.05);
+}
+.cert-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.project-card {
+  width: 100%;
+  max-width: 700px;
+  padding: 36px;
+  border-radius: 36px;
+  margin: auto;
 }
